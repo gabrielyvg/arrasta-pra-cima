@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Footer from "../src/app/components/Footer"
+import Header from "../src/app/components/Header"
 
 export default function Aulas() {
     return (
