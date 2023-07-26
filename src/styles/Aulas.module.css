@@ -1,0 +1,14 @@
+.mainContent {
+    padding-left: 250px;
+}
+
+.video {
+    display: flex;
+    place-content: center;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding-left: 0;
+    }
+}
