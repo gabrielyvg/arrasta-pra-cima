@@ -1,0 +1,54 @@
+.icone {
+    border-radius: 400px;
+    width: 70px;
+    margin-right: 20px;
+}
+
+.icone:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+}
+
+.boxTituloIcone {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+}
+
+.titulo {
+    font-weight: 700;
+}
+
+.sidenav {
+    background-color: #f0f0f0;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    z-index: 1;
+}
+
+.links {
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    padding: 8px 16px;
+    display: block;
+}
+
+.links:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .sidenav {
+        width: 100%;
+    }
+}
