@@ -1,18 +1,16 @@
-import Link from "next/link";
 import styles from '@/styles/Aulas.module.css'
 import Sidebar from "@/components/Sidebar";
 import mockObjs from '@/utils/mockObjs';
-import YouTubeVideo from '@/components/YoutubeVideo';
+import VideoPlayer from '@/components/VideoPlayer';
 
 export default function Aulas() {
-    const videoId = '1qw5ITr3k9E';
+    const video = "https://www.youtube.com/watch?v=q3uXXh1sHcI&ab_channel=BBCEarth"
     return (
         <>
             <Sidebar cursos={mockObjs.cursos} />
             <div className={styles.mainContent}>
-                <YouTubeVideo videoId={videoId} />
+                <VideoPlayer videoUrl={video} />
             </div>
-
         </>
     )
 }

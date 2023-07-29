@@ -1,5 +1,10 @@
-/* styles/tailwind.css */
 @import 'tailwindcss/tailwind.css';
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@layer base{
+    body {
+        @apply dark:bg-gray-800 bg-white
+    }
+}

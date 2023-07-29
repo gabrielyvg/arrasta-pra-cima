@@ -1,0 +1,16 @@
+.progressBar {
+    width: 100%;
+}
+
+.slider {
+    height: 8px;
+}
+
+.slider::-webkit-slider-thumb {
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    -webkit-appearance: none;
+}

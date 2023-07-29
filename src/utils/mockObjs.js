@@ -19,19 +19,28 @@ const cursos = [
         titulo: "HTML 5",
         icon: "faFaceRelieved",
         professor: "Pessoa teste",
-        atividades:
-            [
-                {
-                    id: 1,
-                    nome: "Atividade 1",
-                    completa: true
-                },
-                {
-                    id: 2,
-                    nome: "Atividade 2",
-                    completa: false
-                }
-            ]
+        videoUrl: "https://www.youtube.com/watch?v=q3uXXh1sHcI&ab_channel=BBCEarth",
+        aulas: [
+            {
+                id: 1,
+                nome: "HTML",
+                completa: false,
+                atividades:
+                [
+                    {
+                        id: 1,
+                        nome: "Atividade 1",
+                        completa: true
+                    },
+                    {
+                        id: 2,
+                        nome: "Atividade 2",
+                        completa: false
+                    }
+                ]
+            },
+        ],
+
     },
 ];
 
