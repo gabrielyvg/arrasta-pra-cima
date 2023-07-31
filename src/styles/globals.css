@@ -3,8 +3,15 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@layer base{
+@layer base {
     body {
-        @apply dark:bg-gray-800 bg-white
+        @apply dark: bg-gray-800 bg-white
     }
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
