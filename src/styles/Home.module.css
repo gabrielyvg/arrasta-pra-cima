@@ -1,0 +1,62 @@
+.backgroundSection1 {
+  height: 100vh;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    radial-gradient(
+      77.36% 256.97% at 77.36% 57.52%,
+      rgb(197 219 205) 0%,
+      rgb(60 134 187) 100%
+    );
+}
+
+.centerItems {
+  align-items: center;
+}
+
+.title {
+  padding: 5vh 10vw 0vh 10vw;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.subTitle {
+  padding: 0vh 10vw;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.backgroundSection2 {
+  height: fit-content;
+  padding-bottom: 10px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    radial-gradient(
+      77.36% 256.97% at 77.36% 57.52%,
+      rgb(197 219 205) 0%,
+      rgb(60 134 187) 100%
+    );
+}
+
+.cardsDiv {
+  padding: 0vh 10vw;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+  
+  .subTitle {
+    font-size: 22px;
+  }
+  
+  .backgroundSection1, .backgroundSection2 {
+    height: auto;
+  }
+}

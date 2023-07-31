@@ -2,17 +2,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2em;
-  background-color: #333;
+  background-color: rgb(51, 51, 51);
   color: #fff;
 }
 
 .logo {
+  margin: 0 10vw;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .logo h1 {
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin: 10px;
+  }
 }

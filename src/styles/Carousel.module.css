@@ -1,0 +1,58 @@
+.carousel {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  min-height: 55vh;
+  display: flex;
+  justify-content: center;
+  padding: 5vh 10vw 0vh 10vw;
+}
+
+.carouselDiv {
+  cursor: grab;
+  overflow: hidden;
+}
+
+.carouselInner {
+  display: flex;
+}
+
+.item {
+  min-height: 200px;
+  min-width: 400px;
+  padding: 15px;
+  pointer-events: none;
+}
+
+.item Image {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.descricaoCurso {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 0px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+    min-height: 150px;
+    min-width: 300px;
+    width: 100%;
+  }
+  .item Image {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .item {
+    min-height: 100px;
+    min-width: 250px;
+  }
+  .descricaoCurso {
+    font-size: 14px;
+  }
+}
