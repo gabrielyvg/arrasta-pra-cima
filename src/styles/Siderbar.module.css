@@ -21,7 +21,6 @@
 }
 
 .sidenav {
-    background-color: #f0f0f0;
     width: 250px;
     height: 100vh;
     position: fixed;
@@ -35,7 +34,6 @@
 }
 
 .links {
-    color: #333;
     text-decoration: none;
     transition: background-color 0.2s;
     padding: 8px 16px;
@@ -43,7 +41,8 @@
 }
 
 .links:hover {
-    background-color: #ddd;
+    background-color: #bbbbbb;
+    color: #000;
     cursor: pointer;
 }
 

@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'class',
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -7,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateColumns: {
-        sidebar: "300px auto", // 👈 for sidebar layout. adds grid-cols-sidebar class
+        sidebar: "300px auto",
       },
       gridTemplateRows: {
-        header: "64px auto", // 👈 for the navbar layout. adds grid-rows-header class
+        header: "64px auto",
       },
     },
   },

@@ -1,0 +1,23 @@
+  .buttonToggle {
+      margin-left: 15px;
+      border: none;
+      cursor: pointer;
+      width: 40px;
+      background-color: #a1a1a1;
+      border-radius: 15px;
+  }
+
+  .toggleLight {
+      transform: translateX(0);
+      transition: transform 0.3s ease;
+      margin: 3px;
+      align-items: self-start;
+      display: flex;
+  }
+
+  .toggleDark {
+      transform: translateX(160%);
+      transition: transform 0.3s ease;
+      margin: 3px;
+      display: flex;
+  }
