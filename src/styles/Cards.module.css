@@ -1,0 +1,116 @@
+/* Estilos base */
+.card {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  height: 40vh;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    radial-gradient(
+      77.36% 256.97% at 77.36% 57.52%,
+      rgb(90, 138, 172) 0%,
+      rgb(197 219 205) 100%
+    );
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0vh 5vw;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.details {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.cardDescription {
+  margin-right: 5vw;
+}
+
+.button {
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 10px;
+  align-items: center;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    radial-gradient(
+      77.36% 256.97% at 77.36% 57.52%,
+      rgb(135, 141, 145) 0%,
+      rgb(64, 65, 66) 100%
+    );
+}
+
+.button:hover {
+  color: #ffffff;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    radial-gradient(
+      77.36% 256.97% at 77.36% 57.52%,
+      rgb(109, 163, 199) 0%,
+      rgb(6, 46, 87) 100%
+    );
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .image {
+    width: 150px;
+    height: 150px;
+    margin: 10px 0;
+  }
+
+  .title {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
+
+  .details {
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+
+  .cardDescription {
+    margin-right: 0;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
