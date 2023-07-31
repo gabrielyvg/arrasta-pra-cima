@@ -1,19 +1,47 @@
-.mainContent {
+.container {
     padding-left: 250px;
+}
+
+.video {
     display: flex;
     justify-content: center;
     margin-top: 30px;
 }
 
-.video {
+.titulo {
+    margin-top: 35px;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.tituloCurso {
+    font-size: 30px;
+    font-weight: 700;
     display: flex;
     place-content: center;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.label {
+    margin-right: 10px;
+}
+
+.imageCurso {   
+    display: flex;
+    place-content: center;
+    border-radius: 10px;
 }
 
 @media (max-width: 768px) {
-    .main-content {
+    .container {
         padding-left: 0;
         display: flex;
         justify-content: center;
+    }
+
+    .titulo {
+        padding-left: 0px;
     }
 }

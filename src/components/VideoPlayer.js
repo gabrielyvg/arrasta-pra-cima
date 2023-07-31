@@ -32,6 +32,7 @@ const VideoPlayer = ({ videoUrl }) => {
                 step="any"
                 value={progress}
                 onChange={handleSeek}
+                disabled
             />
         </div>
     );

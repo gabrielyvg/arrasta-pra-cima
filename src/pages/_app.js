@@ -10,10 +10,10 @@ export default function App({ Component, pageProps }) {
   config.autoAddCss = false;
   return (
     <>
-     <ThemeProvider attribute="class">
-        {/* <Header /> */}
-        <Component {...pageProps} />
-        {/* <Footer /> */}
+      <ThemeProvider attribute="class">
+        <Header />
+          <Component {...pageProps} />
+        <Footer />
       </ThemeProvider>
     </>
   );
