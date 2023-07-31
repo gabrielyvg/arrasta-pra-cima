@@ -5,7 +5,7 @@ import {  faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import styles from '@/styles/ToggleButton.module.css';
 import React from 'react'
 
-const toggleButton = () => {
+const ToggleButton = () => {
     const { systemTheme, theme, setTheme } = useTheme();
     const currentTheme = theme === 'system' ? systemTheme : theme;
 
@@ -21,4 +21,4 @@ const toggleButton = () => {
       </div>
     );
 }
-export default toggleButton
+export default ToggleButton
