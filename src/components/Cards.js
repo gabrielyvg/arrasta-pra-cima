@@ -12,7 +12,7 @@ export default function Cards(props) {
             <div className={styles.title}>{card.title}</div>
             <div className={styles.subtitle}>{card.subtitle}</div>
             <div className={styles.details}>{card.details}</div>
-            <Link href={card.id}>
+            <Link href={card.url}>
               <div className={styles.button}>Matricule-se!</div>
             </Link>
           </div>
