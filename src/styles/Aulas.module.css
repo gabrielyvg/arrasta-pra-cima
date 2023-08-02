@@ -1,5 +1,12 @@
 .container {
-    padding-left: 250px;
+    margin-left: 250px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .video {
@@ -28,7 +35,7 @@
     margin-right: 10px;
 }
 
-.imageCurso {   
+.imageCurso {
     display: flex;
     place-content: center;
     border-radius: 10px;

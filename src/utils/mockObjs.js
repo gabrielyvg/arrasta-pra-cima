@@ -31,7 +31,7 @@ const cards = [
     subtitle: "Aprenda a criar sites e aplicativos web",
     details:
       "Este curso aborda as principais tecnologias e ferramentas para desenvolvimento web, incluindo HTML, CSS, JavaScript, React, NextJS, entre outras.",
-    url: "/aulas/web",
+    url: "/aulas/1",
     instrutor: "André",
   },
   {
@@ -41,7 +41,7 @@ const cards = [
     subtitle: "Aprimore suas habilidades de comunicação",
     details:
       "Neste curso, você aprenderá técnicas para melhorar sua comunicação verbal e não verbal, desenvolvendo habilidades essenciais para sua vida pessoal e profissional.",
-    url: "/aulas/comunicao",
+    url: "/aulas/2",
     instrutor: "Daisy",
   },
   {
@@ -51,11 +51,11 @@ const cards = [
     subtitle: "Crie aplicativos para dispositivos móveis",
     details:
       "Aprenda a desenvolver aplicativos para Android e iOS utilizando linguagens como Java, Kotlin, Swift e ferramentas como Android Studio e Xcode.",
-    url: "/aulas/app",
+    url: "/aulas/3",
     instrutor: "Pablios",
   },
 ];
-  
+
 
 const navLinks = [
   {
@@ -73,56 +73,78 @@ const navLinks = [
 ];
 
 const cursos = [
-    {
+  {
+    id: 1,
+    titulo: "Curso de Desenvolvimento Web",
+    icon: "faFaceRelieved",
+    image: image4,
+    instrutor: "André",
+    aulas: [
+      {
         id: 1,
-        titulo: "HTML 5",
-        icon: "faFaceRelieved",
-        professor: "Pessoa teste",
-        aulas: [
+        nome: "HTML 5",
+        completa: false,
+        videoUrl: "https://www.youtube.com/watch?v=ok-plXXHlWw&ab_channel=Fireship",
+        atividades:
+          [
             {
-                id: 1,
-                nome: "HTML",
-                completa: false,
-                videoUrl: "https://www.youtube.com/watch?v=q3uXXh1sHcI&ab_channel=BBCEarth",
-                atividades:
-                [
-                    {
-                        id: 1,
-                        nome: "Atividade HTML 1",
-                        descricao: "Descrição aqui",
-                        completa: true
-                    },
-                    {
-                        id: 2,
-                        nome: "Atividade HTML 2",
-                        descricao: "Descrição aqui",
-                        completa: false
-                    }
-                ]
+              id: 1,
+              nome: "Atividade HTML 1",
+              descricao: "Descrição aqui",
+              completa: true
             },
             {
-                id: 2,
-                nome: "CSS",
-                completa: false,
-                videoUrl: "https://www.youtube.com/watch?v=BF2TZq-ntRQ&ab_channel=NationalGeographic",
-                atividades:
-                [
-                    {
-                        id: 1,
-                        nome: "Atividade CSS 1",
-                        descricao: "Descrição aqui",
-                        completa: true
-                    },
-                    {
-                        id: 2,
-                        nome: "Atividade CSS 2",
-                        descricao: "Descrição aqui",
-                        completa: false
-                    }
-                ]
+              id: 2,
+              nome: "Atividade HTML 2",
+              descricao: "Descrição aqui",
+              completa: false
+            }
+          ]
+      },
+      {
+        id: 2,
+        nome: "CSS",
+        completa: false,
+        videoUrl: "https://www.youtube.com/watch?v=OEV8gMkCHXQ&ab_channel=Fireship",
+        atividades:
+          [
+            {
+              id: 1,
+              nome: "Atividade CSS 1",
+              descricao: "Descrição aqui",
+              completa: true
             },
-        ],
-    },
+            {
+              id: 2,
+              nome: "Atividade CSS 2",
+              descricao: "Descrição aqui",
+              completa: false
+            }
+          ]
+      },
+      {
+        id: 3,
+        nome: "JS",
+        completa: false,
+        videoUrl: "https://www.youtube.com/watch?v=DHjqpvDnNGE&ab_channel=Fireship",
+        atividades:
+          [
+            {
+              id: 1,
+              nome: "Atividade JS 1",
+              descricao: "Descrição aqui",
+              completa: true
+            },
+            {
+              id: 2,
+              nome: "Atividade JS 2",
+              descricao: "Descrição aqui",
+              completa: false
+            }
+          ]
+      },
+    ],
+  },
 ];
 
 export default { cursos, navLinks, images, cards };

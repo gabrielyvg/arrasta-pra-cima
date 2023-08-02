@@ -44,12 +44,14 @@ export default function Aula() {
 
     return (
         <>
-            <Sidebar cursos={mockObjs.cursos} />
+            {mockObjs.cursos.map((curso) => (
+                <Sidebar curso={curso} />
+            ))}
             <div className={styles.container}>
                 <div className={styles.video}>
                     <VideoPlayer videoUrl={aulaSelecionada.videoUrl} />
                 </div>
-                <div className={styles.container}>
+                <div className={styles.center}>
                     <h1 className={styles.titulo}>Atividades da aula {aulaSelecionada.nome}:</h1>
                     <ul>
                         {atividades.map((atividade) => (
