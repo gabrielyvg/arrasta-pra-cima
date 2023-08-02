@@ -1,5 +1,3 @@
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
 import '@/styles/globals.css';
 import 'tailwindcss/tailwind.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
@@ -11,9 +9,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <ThemeProvider attribute="class">
-        <Header />
           <Component {...pageProps} />
-        <Footer />
       </ThemeProvider>
     </>
   );
