@@ -4,7 +4,7 @@ import ToggleButton from '../components/ToggleButton'
 import Link from 'next/link';
 
 export default function Sidebar(props) {
-
+    console.log("props.curso", props.curso);
     return (
         <div className={styles.sidenav}>
             <div className={styles.boxTituloIcone}>
@@ -22,7 +22,7 @@ export default function Sidebar(props) {
             <div key={props.curso.id}>
                 {props.curso.aulas.map((aula) => (
                     <div key={aula.id}>
-                        <Link className={styles.links} href={`./${aula.id}`}>
+                        <Link className={styles.links} href={`./${props.curso.nome}/${aula.id}`}>
                             {aula.nome}
                         </Link>
                     </div>

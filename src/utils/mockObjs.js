@@ -31,7 +31,7 @@ const cards = [
     subtitle: "Aprenda a criar sites e aplicativos web",
     details:
       "Este curso aborda as principais tecnologias e ferramentas para desenvolvimento web, incluindo HTML, CSS, JavaScript, React, NextJS, entre outras.",
-    url: "/aulas/1",
+    url: "/cursos/web",
     instrutor: "André",
   },
   {
@@ -41,7 +41,7 @@ const cards = [
     subtitle: "Aprimore suas habilidades de comunicação",
     details:
       "Neste curso, você aprenderá técnicas para melhorar sua comunicação verbal e não verbal, desenvolvendo habilidades essenciais para sua vida pessoal e profissional.",
-    url: "/aulas/2",
+    url: "/cursos/comunicacao",
     instrutor: "Daisy",
   },
   {
@@ -51,7 +51,7 @@ const cards = [
     subtitle: "Crie aplicativos para dispositivos móveis",
     details:
       "Aprenda a desenvolver aplicativos para Android e iOS utilizando linguagens como Java, Kotlin, Swift e ferramentas como Android Studio e Xcode.",
-    url: "/aulas/3",
+    url: "/cursos/app",
     instrutor: "Pablios",
   },
 ];
@@ -75,6 +75,7 @@ const navLinks = [
 const cursos = [
   {
     id: 1,
+    nome: "web",
     titulo: "Curso de Desenvolvimento Web",
     icon: "faFaceRelieved",
     image: image4,
