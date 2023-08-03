@@ -20,6 +20,13 @@ export default function Aula() {
     const [atividades, setAtividades] = useState([]);
 
     useEffect(() => {
+
+        if (!id) {
+            // adicionar validação de quando um id ou nome não existe nas aulas para redirecionar a 404
+            router.push('/404');
+            return;
+        }
+
         if (aulaSelecionada) {
             setAtividades(aulaSelecionada.atividades.map(atividade => ({
                 ...atividade,
