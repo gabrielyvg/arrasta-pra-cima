@@ -6,7 +6,9 @@ export default function Cursos() {
     return (
         <>
             {mockObjs.cursos.map((curso) => (
-                <Sidebar curso={curso} />
+                <div key={curso.id}>
+                    <Sidebar curso={curso} />
+                </div>
             ))}
         </>
     )
