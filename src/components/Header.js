@@ -1,5 +1,6 @@
 import styles from "@/styles/Header.module.css";
 import Image from "next/image";
+import Link from 'next/link';
 
 export default function Header() {
   return (
@@ -12,11 +13,11 @@ export default function Header() {
             height="50"
             alt="Logo arrasta pra cima"
           />
-          <h1 className={styles.link_items}>Arrasta pra Cima</h1>
+          <Link href={'/'} className={styles.link_items}>Arrasta pra Cima</Link>
         </div>
         <div className={styles.logo}>
           <h1 className={styles.link_items}>Usuário</h1>
-          <Image src="/icone_1.png" width="60" height="60" alt="Foto usuario" />
+          <Image className={styles.userImage} src="/icone_1.png" width="60" height="60" alt="Foto usuario" />
         </div>
       </nav>
     </header>
