@@ -25,6 +25,11 @@
   margin: 0vh 5vw;
 }
 
+.image:hover{
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
+}
+
 .title {
   font-size: 1.2rem;
   font-weight: bold;

@@ -2,11 +2,32 @@ import styles from '@/styles/Siderbar.module.css';
 import Image from 'next/image';
 import ToggleButton from '../components/ToggleButton'
 import Link from 'next/link';
+import { useState } from 'react';
+
+const Toggle = () => {
+    const [isToggled, setIsToggled] = useState(false);
+  
+    const handleToggle = () => {
+      setIsToggled(!isToggled);
+    };
+
+    if (isToggled) {
+        const toggle  = {
+            width: "0px"
+        }
+    }
+  
+    return (
+      <label>
+        <input type="checkbox" checked={isToggled} onChange={handleToggle} />
+        <span>{isToggled ? 'ON' : 'OFF'}</span>
+      </label>
+    );
+};
 
 export default function Sidebar(props) {
-    console.log("props.curso", props.curso);
     return (
-        <div className={styles.sidenav}>
+        <div className={`${styles.sidenav}`}>
             <div className={styles.boxTituloIcone}>
                 <Image
                     src={props.curso.image}
@@ -28,6 +49,7 @@ export default function Sidebar(props) {
                     </div>
                 ))}
             </div>
+            <Toggle/>
         </div>
     );
 }

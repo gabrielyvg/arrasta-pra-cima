@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 
 function encontrarAulaPorNome(nome, cursoSelecionado) {
     var aulaSelecionada;
-    aulaSelecionada = cursoSelecionado.aulas.find(aula => aula.nome === nome);
+    aulaSelecionada = cursoSelecionado?.aulas.find(aula => aula.nome === nome);
     return aulaSelecionada;
 }
 

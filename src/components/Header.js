@@ -17,7 +17,7 @@ export default function Header() {
         </div>
         <div className={styles.logo}>
           <h1 className={styles.link_items}>Usuário</h1>
-          <Image src="/icone_1.png" width="60" height="60" alt="Foto usuario" />
+          <Image className={styles.userImage} src="/icone_1.png" width="60" height="60" alt="Foto usuario" />
         </div>
       </nav>
     </header>
