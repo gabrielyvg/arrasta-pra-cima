@@ -31,7 +31,7 @@ const cards = [
     subtitle: "Aprenda a criar sites e aplicativos web",
     details:
       "Este curso aborda as principais tecnologias e ferramentas para desenvolvimento web, incluindo HTML, CSS, JavaScript, React, NextJS, entre outras.",
-    url: "/cursos/web",
+    url: "/cursos/web/CSS",
     instrutor: "André",
   },
   {

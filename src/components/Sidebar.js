@@ -22,7 +22,7 @@ export default function Sidebar(props) {
             <div key={props.curso.id}>
                 {props.curso.aulas.map((aula) => (
                     <div key={aula.id}>
-                        <Link className={styles.links} href={`./${props.curso.nome}/${aula.id}`}>
+                        <Link className={styles.links} href={`./${props.curso.nome}/${aula.nome}`}>
                             {aula.nome}
                         </Link>
                     </div>

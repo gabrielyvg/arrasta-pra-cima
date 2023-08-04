@@ -22,9 +22,9 @@
 
 .sidenav {
     width: 250px;
-    height: 100vh;
     position: fixed;
-    top: 0;
+    top: 50px;
+    bottom: 50px;
     left: 0;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     display: flex;

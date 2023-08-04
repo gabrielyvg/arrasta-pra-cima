@@ -21,6 +21,13 @@ export default function Cursos() {
     const [atividades, setAtividades] = useState([]);
 
     useEffect(() => {
+        // if (curso?.[0] && !curso?.[1]) {
+        //     // adicionar validação de quando um id ou nome não existe nas aulas para redirecionar a 404
+        //     router.push('/');
+        //     return;
+        // }
+
+
         if (aulaSelecionada) {
             setAtividades(aulaSelecionada.atividades.map(atividade => ({
                 ...atividade,
