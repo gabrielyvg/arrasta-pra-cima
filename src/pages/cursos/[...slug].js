@@ -5,19 +5,28 @@ import styles from '@/styles/Aulas.module.css';
 import VideoPlayer from '@/components/VideoPlayer';
 import { useState, useEffect } from 'react';
 
-function encontrarAulaPorNome(nome) {
+function encontrarAulaPorNome(nome, cursoSelecionado) {
     var aulaSelecionada;
-    mockObjs.cursos.map((curso) => (
-        aulaSelecionada = curso.aulas.find(aula => aula.nome === nome)
-    ));
+    aulaSelecionada = cursoSelecionado.aulas.find(aula => aula.nome === nome);
     return aulaSelecionada;
+}
+
+function encontrarCursoPorNome(nome) {
+    var cursoSelecionado;
+    cursoSelecionado = mockObjs.cursos.find(curso => curso.nome === nome);
+    return cursoSelecionado;
 }
 
 export default function Cursos() {
     const router = useRouter();
     let curso = router.query.slug;
     // const { id } = router.query;
-    const aulaSelecionada = encontrarAulaPorNome(curso?.[1]);
+    const cursoSelecionado = encontrarCursoPorNome(curso?.[0]); 
+    const aulaSelecionada = encontrarAulaPorNome(curso?.[1], cursoSelecionado);
+
+    console.log("cursoSelecionado", cursoSelecionado);
+    console.log("aulaSelecionada", aulaSelecionada);
+
     const [atividades, setAtividades] = useState([]);
 
     useEffect(() => {
@@ -52,9 +61,7 @@ export default function Cursos() {
 
     return (
         <>
-        {mockObjs.cursos.map((curso) => (
-            <Sidebar curso={curso} />
-        ))}
+        <Sidebar curso={cursoSelecionado} />
         <div className={styles.container}>
             <div className={styles.video}>
                 <VideoPlayer videoUrl={aulaSelecionada.videoUrl} />

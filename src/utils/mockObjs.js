@@ -41,7 +41,7 @@ const cards = [
     subtitle: "Aprimore suas habilidades de comunicação",
     details:
       "Neste curso, você aprenderá técnicas para melhorar sua comunicação verbal e não verbal, desenvolvendo habilidades essenciais para sua vida pessoal e profissional.",
-    url: "/cursos/comunicacao",
+    url: "/cursos/comunicacao/Socializar",
     instrutor: "Daisy",
   },
   {
@@ -51,7 +51,7 @@ const cards = [
     subtitle: "Crie aplicativos para dispositivos móveis",
     details:
       "Aprenda a desenvolver aplicativos para Android e iOS utilizando linguagens como Java, Kotlin, Swift e ferramentas como Android Studio e Xcode.",
-    url: "/cursos/app",
+    url: "/cursos/app/IOS",
     instrutor: "Pablios",
   },
 ];
@@ -139,6 +139,152 @@ const cursos = [
             {
               id: 2,
               nome: "Atividade JS 2",
+              descricao: "Descrição aqui",
+              completa: false
+            }
+          ]
+      },
+    ],
+  },
+  {
+    id: 2,
+    nome: "comunicacao",
+    titulo: "Curso de Comunicação",
+    icon: "faFaceRelieved",
+    image: image5,
+    instrutor: "Daisy",
+    aulas: [
+      {
+        id: 1,
+        nome: "Socializar",
+        completa: false,
+        videoUrl: "https://www.youtube.com/watch?v=q3uXXh1sHcI&t=2s&ab_channel=BBCEarth",
+        atividades:
+          [
+            {
+              id: 1,
+              nome: "Atividade socializar 1",
+              descricao: "Descrição aqui",
+              completa: true
+            },
+            {
+              id: 2,
+              nome: "Atividade socializar 2",
+              descricao: "Descrição aqui",
+              completa: false
+            }
+          ]
+      },
+      {
+        id: 2,
+        nome: "Debate",
+        completa: false,
+        videoUrl: "https://www.youtube.com/watch?v=tDOM-U7uStM&ab_channel=TowerBeachClub",
+        atividades:
+          [
+            {
+              id: 1,
+              nome: "Atividade debate 1",
+              descricao: "Descrição aqui",
+              completa: true
+            },
+            {
+              id: 2,
+              nome: "Atividade debate 2",
+              descricao: "Descrição aqui",
+              completa: false
+            }
+          ]
+      },
+      {
+        id: 3,
+        nome: "Apresentação",
+        completa: false,
+        videoUrl: "https://www.youtube.com/watch?v=-vBUxmWeoc0&ab_channel=TheDodo",
+        atividades:
+          [
+            {
+              id: 1,
+              nome: "Atividade aprensentação 1",
+              descricao: "Descrição aqui",
+              completa: true
+            },
+            {
+              id: 2,
+              nome: "Atividade aprensentação 2",
+              descricao: "Descrição aqui",
+              completa: false
+            }
+          ]
+      },
+    ],
+  },
+  {
+    id: 2,
+    nome: "app",
+    titulo: "Curso de Desenvolvimento de Apps",
+    icon: "faFaceRelieved",
+    image: image6,
+    instrutor: "Pablios",
+    aulas: [
+      {
+        id: 1,
+        nome: "IOS",
+        completa: false,
+        videoUrl: "https://www.youtube.com/watch?v=vYyUb_MI7to&ab_channel=GoPro",
+        atividades:
+          [
+            {
+              id: 1,
+              nome: "Atividade IOS 1",
+              descricao: "Descrição aqui",
+              completa: true
+            },
+            {
+              id: 2,
+              nome: "Atividade IOS 2",
+              descricao: "Descrição aqui",
+              completa: false
+            }
+          ]
+      },
+      {
+        id: 2,
+        nome: "Ionic",
+        completa: false,
+        videoUrl: "https://www.youtube.com/watch?v=iLLXfPwrtj0&ab_channel=AlanMontgomery",
+        atividades:
+          [
+            {
+              id: 1,
+              nome: "Atividade Ionic 1",
+              descricao: "Descrição aqui",
+              completa: true
+            },
+            {
+              id: 2,
+              nome: "Atividade Ionic 2",
+              descricao: "Descrição aqui",
+              completa: false
+            }
+          ]
+      },
+      {
+        id: 3,
+        nome: "OnePiece",
+        completa: false,
+        videoUrl: "https://www.youtube.com/watch?v=7JBkHavpRcA&ab_channel=SomeMoeGaming",
+        atividades:
+          [
+            {
+              id: 1,
+              nome: "Atividade OnePiece 1",
+              descricao: "Descrição aqui",
+              completa: true
+            },
+            {
+              id: 2,
+              nome: "Atividade OnePiece 2",
               descricao: "Descrição aqui",
               completa: false
             }
